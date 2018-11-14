@@ -19,5 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/page-accueil', 'View@accueil');
-
 Route::get('/page-deux', 'View@deux');

@@ -11,6 +11,19 @@ class SingersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      DB::table('singers')->insert([
+          [
+            'name' => "Joe Dassin",
+            'role' => "Assasin"
+          ],
+          [
+            'name' => "Sacrieur",
+            'role' => "Support"
+          ],
+          [
+            'name' => "iop",
+            'role' => "Assasin"
+          ]
+      ]);
     }
 }

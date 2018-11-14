@@ -13,7 +13,12 @@ class CreateSingersMigration extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('singers', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('name');
+          $table->string('city');
+          $table->timestamps();
+      });
     }
 
     /**
@@ -23,6 +28,7 @@ class CreateSingersMigration extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('singers');
+
     }
 }

@@ -16,7 +16,7 @@ class CreateConcertsMigration extends Migration
       Schema::create('singers', function (Blueprint $table) {
           $table->increments('id');
           $table->string('name');
-          $table->string('zone');
+          $table->string('city');
           $table->timestamps();
       });
     }

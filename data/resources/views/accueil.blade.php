@@ -2,13 +2,13 @@
 
 @section('content')
 
-@foreach ($persos as $value)
+@foreach ($concerts as $value)
   <p>{{ $value->name }}</p>
-  <p>{{ $value->role }}</p>
+  <p>{{ $value->city }}</p>
   <br>
 @endforeach
 
-<p>acceuil</p>
+
 
 
 @endsection

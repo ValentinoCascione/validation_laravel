@@ -7,7 +7,7 @@
   </head>
   <body>
        @include('layouts.sidebar')
-    <p>Start content</p>
+    
 
     @yield('content')
 
